@@ -109,6 +109,7 @@ jobs:
 
     - name: Setup Python ${{ matrix.python-version }}
       uses: actions/setup-python@v5.4.0
+      id: setup-python
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
@@ -155,6 +156,7 @@ jobs:
         SQLALCHEMY_WARN_20: 1
         COLUMNS: 160
         PYTEST_BACKEND: ${{ matrix.backend-db }}
+        UV_PYTHON: ${{ steps.setup-python.outputs.python-path }}
         # Postgres backend
         POSTGRES_HOST_AUTH_METHOD: trust
         POSTGRES_ADDRESS: localhost
@@ -258,6 +260,7 @@ jobs:
 
     - name: Set up Python
       uses: actions/setup-python@v5.4.0
+      id: setup-python
       with:
         python-version: "3.x"
 
@@ -279,11 +282,15 @@ jobs:
         uv tool install nox
 
     - name: Combine coverage data and display human readable report
+      env:
+        UV_PYTHON: ${{ steps.setup-python.outputs.python-path }}
       run: |
         nox -rs coverage -- combine --debug=pathmap
         nox -rs coverage -- report --show-missing --ignore-errors
 
     - name: Create coverage report
+      env:
+        UV_PYTHON: ${{ steps.setup-python.outputs.python-path }}
       run: |
         nox -rs coverage -- xml --ignore-errors
 
@@ -304,6 +311,7 @@ jobs:
 
     - name: Setup Python
       uses: actions/setup-python@v5.4.0
+      id: setup-python
       with:
         python-version: "3.x"
 
@@ -319,5 +327,7 @@ jobs:
         uv tool install nox
 
     - name: Run mypy
+      env:
+        UV_PYTHON: ${{ steps.setup-python.outputs.python-path }}
       run: |
         nox -rs mypy
