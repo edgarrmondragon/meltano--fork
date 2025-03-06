@@ -26,7 +26,7 @@ click-didyoumean==0.3.1
 colorama==0.4.6
 coverage==7.6.12
 croniter==6.0.0
-cryptography==43.0.3
+cryptography==44.0.2
 distlib==0.3.9
 exceptiongroup==1.2.2 ; python_full_version < '3.11'
 execnet==2.1.1
