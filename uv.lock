@@ -22,7 +22,7 @@ wheels = [
 
 [[package]]
 name = "aiohappyeyeballs"
-version = "2.5.0"
+version = "2.6.1"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/a2/0c/458958007041f4b4de2d307e6b75d9e7554dad0baf26fe7a48b741aac126/aiohappyeyeballs-2.5.0.tar.gz", hash = "sha256:18fde6204a76deeabc97c48bdd01d5801cfda5d6b9c8bbeb1aaaee9d648ca191", size = 22494 }
 wheels = [
@@ -185,7 +185,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/87/c6/53da25344e3e3a9c0
 
 [[package]]
 name = "attrs"
-version = "25.1.0"
+version = "25.3.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/49/7c/fdf464bcc51d23881d110abd74b512a42b3d5d376a55a831b44c603ae17f/attrs-25.1.0.tar.gz", hash = "sha256:1c97078a80c814273a76b2a298a932eb681c87415c11dee0a6921de7f1b02c3e", size = 810562 }
 wheels = [
@@ -217,7 +217,7 @@ wheels = [
 
 [[package]]
 name = "azure-identity"
-version = "1.20.0"
+version = "1.21.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "azure-core" },
@@ -233,7 +233,7 @@ wheels = [
 
 [[package]]
 name = "azure-storage-blob"
-version = "12.24.1"
+version = "12.25.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "azure-core" },
@@ -266,7 +266,7 @@ wheels = [
 
 [[package]]
 name = "boto3"
-version = "1.37.7"
+version = "1.37.11"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "botocore" },
@@ -280,7 +280,7 @@ wheels = [
 
 [[package]]
 name = "boto3-stubs"
-version = "1.37.7"
+version = "1.37.11"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "botocore-stubs" },
@@ -305,7 +305,7 @@ essential = [
 
 [[package]]
 name = "botocore"
-version = "1.37.7"
+version = "1.37.11"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jmespath" },
@@ -320,7 +320,7 @@ wheels = [
 
 [[package]]
 name = "botocore-stubs"
-version = "1.37.7"
+version = "1.37.11"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "types-awscrt" },
@@ -502,7 +502,7 @@ wheels = [
 
 [[package]]
 name = "check-jsonschema"
-version = "0.31.2"
+version = "0.31.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -1017,7 +1017,7 @@ wheels = [
 
 [[package]]
 name = "identify"
-version = "2.6.8"
+version = "2.6.9"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f9/fa/5eb460539e6f5252a7c5a931b53426e49258cde17e3d50685031c300a8fd/identify-2.6.8.tar.gz", hash = "sha256:61491417ea2c0c5c670484fd8abbb34de34cdae1e5f39a73ee65e48e4bb663fc", size = 99249 }
 wheels = [
@@ -1592,7 +1592,7 @@ wheels = [
 
 [[package]]
 name = "mypy-boto3-ec2"
-version = "1.37.5"
+version = "1.37.11"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-extensions", marker = "python_full_version < '3.12'" },
@@ -2495,7 +2495,7 @@ wheels = [
 
 [[package]]
 name = "responses"
-version = "0.25.6"
+version = "0.25.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pyyaml" },
@@ -2851,7 +2851,7 @@ wheels = [
 
 [[package]]
 name = "sqlalchemy"
-version = "2.0.38"
+version = "2.0.39"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "greenlet", marker = "platform_machine == 'AMD64' or platform_machine == 'WIN32' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'ppc64le' or platform_machine == 'win32' or platform_machine == 'x86_64'" },
@@ -2904,7 +2904,7 @@ wheels = [
 
 [[package]]
 name = "structlog"
-version = "25.1.0"
+version = "25.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-extensions", marker = "python_full_version < '3.11'" },
@@ -3021,7 +3021,7 @@ wheels = [
 
 [[package]]
 name = "types-awscrt"
-version = "0.23.10"
+version = "0.24.1"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/a3/53/7c69677327794fe91cc89a1362400b78f00b1a20364384da1e004c259d42/types_awscrt-0.23.10.tar.gz", hash = "sha256:965659260599b421564204b895467684104a2c0311bbacfd3c2423b8b0d3f3e9", size = 15455 }
 wheels = [
@@ -3175,7 +3175,7 @@ wheels = [
 
 [[package]]
 name = "uv"
-version = "0.6.4"
+version = "0.6.6"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/93/66/88e0f5a58f0f6b28c7547499c1c405be6f9890ebbf7f5b6eea484c36c09c/uv-0.6.4.tar.gz", hash = "sha256:d043bc2265a9c7306833b06ae619a520569a96e6b118a405b6d7a94939baa76b", size = 3083097 }
 wheels = [
@@ -3200,7 +3200,7 @@ wheels = [
 
 [[package]]
 name = "virtualenv"
-version = "20.29.2"
+version = "20.29.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "distlib" },
